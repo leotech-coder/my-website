@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leo Tech</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .nav {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(to right, black, #222);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 30px;
+        }
+
+        .hero p {
+            margin: 15px 0;
+        }
+
+        .hero button {
+            background-color: gold;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* SERVICES */
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: green;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* DESKTOP VIEW */
+        @media(min-width: 768px) {
+            .cards {
+                flex-direction: row;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        Leo Tech
+    </div>
+
+    <div class="hero">
+        <h1>I Build Professional Websites</h1>
+        <p>Helping businesses grow online</p>
+        <button>Hire Me</button>
+    </div>
+
+    <div class="services">
+        <h2>My Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Website Design</h3>
+                <p>Modern and responsive websites</p>
+            </div>
+
+            <div class="card">
+                <h3>Landing Pages</h3>
+                <p>High-converting pages</p>
+            </div>
+
+            <div class="card">
+                <h3>Business Websites</h3>
+                <p>Complete websites for brands</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>About Me</h2>
+        <p>I help businesses build a strong online presence with simple and effective websites.</p>
+    </div>
+
+    <a class="whatsapp" href="https://api.whatsapp.com/send?phone=2349164081910&text=Hello%20I%20need%20a%20website">💬</a>
+
+</body>
+</html>
