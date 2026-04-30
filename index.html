@@ -1,133 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Leo Tech</title>
+  <meta charset="UTF-8">
+  <title>Leo Tech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: white;
+    }
 
-        /* NAVBAR */
-        .nav {
-            background-color: black;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-weight: bold;
-        }
+    .nav {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-        /* HERO */
-        .hero {
-            background: linear-gradient(to right, black, #222);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+    .hero {
+      padding: 120px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    }
 
-        .hero h1 {
-            font-size: 30px;
-        }
+    .hero h1 {
+      font-size: 30px;
+      line-height: 1.4;
+    }
 
-        .hero p {
-            margin: 15px 0;
-        }
+    .hero p {
+      opacity: 0.7;
+      margin-top: 10px;
+    }
 
-        .hero button {
-            background-color: gold;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-        }
+    .hero button {
+      background: gold;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-        /* SERVICES */
-        .services {
-            padding: 40px 20px;
-            text-align: center;
-        }
+    .hero button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+    }
 
-        .cards {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+    .trust {
+      text-align: center;
+      opacity: 0.6;
+      margin-top: 20px;
+    }
 
-        .card {
-            background: #f5f5f5;
-            padding: 20px;
-            border-radius: 10px;
-        }
+    .services {
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        /* ABOUT */
-        .about {
-            padding: 40px 20px;
-            text-align: center;
-        }
+    .services h2 {
+      margin-bottom: 20px;
+    }
 
-        /* WHATSAPP */
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: green;
-            color: white;
-            padding: 15px;
-            border-radius: 50%;
-            text-decoration: none;
-            font-size: 20px;
-        }
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 15px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 0.4s;
+    }
 
-        /* DESKTOP VIEW */
-        @media(min-width: 768px) {
-            .cards {
-                flex-direction: row;
-            }
-        }
+    .card:hover {
+      transform: translateY(-5px);
+      background: #1c1c1c;
+    }
 
-    </style>
+    .about {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .process {
+      padding: 40px 20px;
+      text-align: center;
+      background: #111;
+    }
+
+    .process p {
+      margin: 10px 0;
+      opacity: 0.8;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      padding: 12px 18px;
+      border-radius: 50px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+  </style>
 </head>
 
 <body>
 
-    <div class="nav">
-        Leo Tech
+  <div class="nav">Leo Tech</div>
+
+  <div class="hero">
+    <h1>I Build Websites That Turn Visitors Into Paying Customers</h1>
+    <p>Fast, modern websites designed to bring you leads through WhatsApp</p>
+    <button onclick="window.location.href='https://wa.me/2349164081910?text=Hello%20I%20need%20a%20website'">
+      Get Started
+    </button>
+  </div>
+
+  <div class="trust">
+    <p>Trusted by small businesses & startups</p>
+  </div>
+
+  <div class="services">
+    <h2>My Services</h2>
+
+    <div class="card">
+      <h3>Website Design</h3>
+      <p>Modern and responsive websites</p>
     </div>
 
-    <div class="hero">
-        <h1>I Help Businesses Get Customers Online</h1>
-        <p>Simple websites that bring you clients through WhatsApp</p>
-        </div>
-
-    <div class="services">
-        <h2>My Services</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Website Design</h3>
-                <p>Modern and responsive websites</p>
-            </div>
-
-            <div class="card">
-                <h3>Landing Pages</h3>
-                <p>High-converting pages</p>
-            </div>
-
-            <div class="card">
-                <h3>Business Websites</h3>
-                <p>Complete websites for brands</p>
-            </div>
-
-        </div>
+    <div class="card">
+      <h3>Landing Pages</h3>
+      <p>High-converting pages</p>
     </div>
 
-    <div class="about">
-        <h2>About Me</h2>
-        <p>I help businesses build a strong online presence with simple and effective websites.</p>
+    <div class="card">
+      <h3>Business Websites</h3>
+      <p>Complete websites for brands</p>
     </div>
 
-    <a class="whatsapp" href="https://api.whatsapp.com/send?phone=2349164081910&text=Hello%20I%20need%20a%20website">💬</a>
+  </div>
+
+  <div class="process">
+    <h2>How It Works</h2>
+    <p>1. You contact me</p>
+    <p>2. I design your website</p>
+    <p>3. You start getting customers</p>
+  </div>
+
+  <div class="about">
+    <h2>About Me</h2>
+    <p>I help businesses build a strong online presence with simple and effective websites.</p>
+  </div>
+
+  <a class="whatsapp" href="https://wa.me/2349164081910?text=Hello%20I%20need%20a%20website">
+    💬 Chat on WhatsApp
+  </a>
+
+  <script>
+    const cards = document.querySelectorAll(".card");
+
+    window.addEventListener("scroll", () => {
+      cards.forEach(card => {
+        const position = card.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (position < screenHeight - 50) {
+          card.style.opacity = 1;
+          card.style.transform = "translateY(0)";
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
