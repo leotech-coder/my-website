@@ -1,185 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Leo Tech</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SwiftLogix</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0a0a0a;
-      color: white;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
+}
 
-    .nav {
-      background: #111;
-      padding: 15px;
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
-    }
+/* NAV */
+.nav {
+  background: #111;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+}
 
-    .hero {
-      padding: 120px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
-    }
+/* HERO */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+}
 
-    .hero h1 {
-      font-size: 30px;
-      line-height: 1.4;
-    }
+.hero h1 {
+  font-size: 28px;
+  line-height: 1.4;
+}
 
-    .hero p {
-      opacity: 0.7;
-      margin-top: 10px;
-    }
+.hero p {
+  opacity: 0.7;
+}
 
-    .hero button {
-      background: gold;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 8px;
-      margin-top: 20px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+.hero button {
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: #00c2ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-    .hero button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
-    }
+/* FEATURES */
+.features {
+  padding: 40px 20px;
+  text-align: center;
+}
 
-    .trust {
-      text-align: center;
-      opacity: 0.6;
-      margin-top: 20px;
-    }
+.card {
+  background: #111;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.4s;
+}
 
-    .services {
-      padding: 40px 20px;
-      text-align: center;
-    }
+.card:hover {
+  background: #1c1c1c;
+}
 
-    .services h2 {
-      margin-bottom: 20px;
-    }
+/* PROCESS */
+.process {
+  padding: 40px;
+  background: #111;
+  text-align: center;
+}
 
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 12px;
-      margin: 15px;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: 0.4s;
-    }
+/* CTA */
+.cta {
+  padding: 50px;
+  text-align: center;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-      background: #1c1c1c;
-    }
+.cta button {
+  background: #00c2ff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+}
 
-    .about {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .process {
-      padding: 40px 20px;
-      text-align: center;
-      background: #111;
-    }
-
-    .process p {
-      margin: 10px 0;
-      opacity: 0.8;
-    }
-
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      padding: 12px 18px;
-      border-radius: 50px;
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-  </style>
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="nav">Leo Tech</div>
+<div class="nav">SwiftLogix 🚚</div>
 
-  <div class="hero">
-    <h1>I Build Websites That Turn Visitors Into Paying Customers</h1>
-    <p>Fast, modern websites designed to bring you leads through WhatsApp</p>
-    <button onclick="window.location.href='https://wa.me/2349164081910?text=Hello%20I%20need%20a%20website'">
-      Get Started
-    </button>
+<div class="hero">
+  <h1>Fast & Reliable Logistics Across Nigeria</h1>
+  <p>We deliver your goods safely, quickly, and on time — every time.</p>
+
+  <button onclick="window.location.href='https://wa.me/2349164081910?text=Hello%20I%20need%20logistics%20service'">
+    Book Delivery
+  </button>
+</div>
+
+<div class="features">
+  <h2>Our Services</h2>
+
+  <div class="card">
+    <h3>Local Delivery</h3>
+    <p>Same-day delivery within your city</p>
   </div>
 
-  <div class="trust">
-    <p>Trusted by small businesses & startups</p>
+  <div class="card">
+    <h3>Nationwide Shipping</h3>
+    <p>Deliver goods across Nigeria safely</p>
   </div>
 
-  <div class="services">
-    <h2>My Services</h2>
-
-    <div class="card">
-      <h3>Website Design</h3>
-      <p>Modern and responsive websites</p>
-    </div>
-
-    <div class="card">
-      <h3>Landing Pages</h3>
-      <p>High-converting pages</p>
-    </div>
-
-    <div class="card">
-      <h3>Business Websites</h3>
-      <p>Complete websites for brands</p>
-    </div>
-
+  <div class="card">
+    <h3>Warehousing</h3>
+    <p>Secure storage for your products</p>
   </div>
+</div>
 
-  <div class="process">
-    <h2>How It Works</h2>
-    <p>1. You contact me</p>
-    <p>2. I design your website</p>
-    <p>3. You start getting customers</p>
-  </div>
+<div class="process">
+  <h2>How It Works</h2>
+  <p>1. Request a pickup</p>
+  <p>2. We collect your goods</p>
+  <p>3. We deliver fast & safely</p>
+</div>
 
-  <div class="about">
-    <h2>About Me</h2>
-    <p>I help businesses build a strong online presence with simple and effective websites.</p>
-  </div>
+<div class="cta">
+  <h2>Need Fast Delivery?</h2>
+  <button onclick="window.location.href='https://wa.me/2349164081910?text=I%20need%20delivery'">
+    Contact Us Now
+  </button>
+</div>
 
-  <a class="whatsapp" href="https://wa.me/2349164081910?text=Hello%20I%20need%20a%20website">
-    💬 Chat on WhatsApp
-  </a>
+<a class="whatsapp" href="https://wa.me/2349164081910?text=Hello%20I%20need%20logistics%20service">
+  💬 Chat
+</a>
 
-  <script>
-    const cards = document.querySelectorAll(".card");
+<script>
+const cards = document.querySelectorAll(".card");
 
-    window.addEventListener("scroll", () => {
-      cards.forEach(card => {
-        const position = card.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight;
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const position = card.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
 
-        if (position < screenHeight - 50) {
-          card.style.opacity = 1;
-          card.style.transform = "translateY(0)";
-        }
-      });
-    });
-  </script>
+    if (position < screenHeight - 50) {
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0)";
+    }
+  });
+});
+</script>
 
 </body>
 </html>
